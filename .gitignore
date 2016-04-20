@@ -60,7 +60,6 @@ wp-content/*
 !wp-content/themes/
 dist
 # ignore these plugins
-wp-content/plugins/*
 
 # ignore specific themes
 
