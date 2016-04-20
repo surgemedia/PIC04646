@@ -1,0 +1,41 @@
+/*=================================
+=            Home Page            =
+=================================*/
+#bs-example-navbar-collapse {
+	margin-bottom:5em;
+	display:block;
+}
+#panel-menu {
+	margin: 5em 0 10em 0;
+}
+
+#shop-menu {
+	padding-bottom:8em;
+}
+
+#how-to-order {
+	padding-top:7.5em;
+	padding-bottom:7.5em;
+
+}
+#testionimals {
+	padding-top:8em;
+	padding-bottom:4em;
+
+}
+#clients {
+	border-top:1px solid rgba($black,0.1);
+	.page-section-title {
+		padding-top:5em;
+	}
+	padding-bottom:8em;
+}
+#footer {
+	padding-top:8em;
+	padding-bottom:8em;
+	span {
+		@extend .p3;
+		font-size:1.4em;
+		color:#fff;
+	}
+}

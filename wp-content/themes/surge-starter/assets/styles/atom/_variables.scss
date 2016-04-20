@@ -6,4 +6,21 @@ $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
 // Colors
-$brand-primary:         #27ae60;
+
+$font-family: 'Montserrat';
+$default-border: 4px solid #fff;
+/*============================
+=            Vars            =
+============================*/
+
+$color1: #f48933;
+$color2: #253b42;
+$color3: #ffffff;
+$color4: #1a292e;
+
+$orange: $color1;
+$coal: $color2;
+$white: $color3;
+$black: $color4;
+
+$brand-primary:         $color1;

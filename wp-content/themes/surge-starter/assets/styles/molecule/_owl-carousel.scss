@@ -1,0 +1,76 @@
+.fake-nav,
+.owl-carousel {
+	.owl-item  {
+		text-align: center;
+		img {
+			display:inline;
+			width:auto;
+		}
+	} 
+	.owl-nav {
+		div {
+			// position: absolute;
+			color:transparent;
+			width:1px;
+			height:1px;
+			&:before {
+				@extend .icon-font-core;
+				width: auto;
+			    height: 60px;
+			    position: absolute;
+			    top: 50%;
+			    left: 3em;
+			    font-size: 6em;
+			    text-align: center;
+			    content: '\004c';
+			    color: rgba($black,0.3);
+
+			}
+		}
+		div + div { 
+			&:before {
+				
+				left:auto;
+				right:3em;
+				content:'\004d';
+				
+
+			}
+		}
+	}
+} 
+
+.testimonials.owl-carousel {
+	
+	overflow:hidden;
+	.item {
+		height: 430px;
+	}
+	p {
+		width:80%;
+		margin: 65px auto;
+		// margin-top: 65px;
+		// margin-bottom: 65px;
+
+		@extend .p2;
+	}
+	span {
+		@extend .p3;
+		font-weight:bold;
+	}
+}
+#clients {
+	position:relative;
+	.owl-nav {
+		div {
+
+			&:before {
+			    top: 3.7em;
+
+			}
+		}
+		div + div { 
+			&:before {}
+		}
+	}
+}
