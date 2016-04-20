@@ -1,0 +1,132 @@
+
+.menu-main-menu-container {
+	display:inline-block;
+	 	padding: 0px;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	@extend .col-md-8;
+	#menu-main-menu {
+		width: 100%;
+	    margin: 0;
+	    padding: 0px;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	    display: inline-block;
+			li {
+				border-right:1px solid transparent;
+				width: (100%/6); 
+				display: table;
+				a {
+					@extend .menu-a;
+					color:$color2;
+					// padding:2.95em 1.605em;
+					background-color:rgba($white,0.7);
+					text-transform:uppercase;
+					padding-top: 15px;
+					height:103px; 
+					display: table-cell;
+    				vertical-align: middle;
+    				width:100%;
+					.caret {
+						display:none;
+					}
+				}
+				ul {
+					background-color:transparent;
+					margin: 1px 0 0 0;
+					padding: 0px;
+					box-shadow: none;
+
+
+					li {
+						width:100%;
+						background-color:transparent;
+						border-bottom:1px solid transparent;
+						&.open { a { background-color:$orange; color:$white; } }
+						a {
+							font-size:1em;
+							color:$color2;
+							text-transform:uppercase;
+							background-color:rgba($white,1);
+
+							.caret {
+								display:none;
+							}
+						}
+						ul {
+							background-color: transparent;
+						    left: 101%;
+						    top: 0px;
+						    box-shadow: none;
+						    margin: 0px;
+						    padding: 0px;
+						    border: 0px;
+							li {
+								width:100%;
+								background-color:transparent;
+								border-bottom:1px solid transparent;
+							&.open { a { background-color:$orange; color:$white; } }
+								a {
+									font-size:1em;
+									color:$color2;
+									text-transform:uppercase;
+									background-color:rgba($white,1);
+
+									.caret {
+										display:none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+	}
+}
+#icon-nav {
+	li {
+    padding: 0;
+    display: inline-block;
+    border: 1px solid transparent;
+			a {
+					color: $white;
+				    padding: 1em;
+				    background-color: $color2;
+				    min-height: 50px;
+				    overflow: hidden;
+				   &:hover {
+				   	background-color:$black;
+				   }
+				i {
+					float:left;
+					display: inline-block;
+					font-size: 3em;
+					margin: 0 7px 0 0px;
+				}
+				.icon-telephone + span {
+					    float: left;
+					    display: inline-block;
+					    font-size: 1.5em;
+					    margin: 0 7px 0 0;
+					    line-height: 2;
+				}
+				.icon-fork {
+					font-size: 2.5em;
+				}
+				span {
+					float:left;
+					text-transform: uppercase;
+				    display: inline-block;
+				    text-align: left;
+				    font-weight: 700;
+				    line-height: 1em;
+				    font-size: 1.3em;
+				}
+			}
+}
+}

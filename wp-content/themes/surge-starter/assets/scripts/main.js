@@ -74,4 +74,65 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
+
+
+/*====================================
+=            Owl Carousel            =
+====================================*/ 
+$('.testimonials').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{ 
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+var client_owl = $('.clients');
+client_owl.owlCarousel({
+    loop:true,
+    margin:5,
+    nav:false,
+    autoWidth:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+
+$('.client-owl-next').click(function() {
+    client_owl.trigger('next.owl.carousel');
+})
+$('.client-owl-prev').click(function() {
+    client_owl.trigger('prev.owl.carousel');
+})
+
+  /*=============================================
+  = Enabling multi-level navigation =
+  ===============================================*/
+  $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+      event.preventDefault(); 
+      event.stopPropagation(); 
+      $(this).parent().siblings().removeClass('open');
+      $(this).parent().toggleClass('open');
+  });
+
+
+
 })(jQuery); // Fully reference jQuery after this point.
