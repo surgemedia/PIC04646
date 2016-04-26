@@ -1,0 +1,37 @@
+#mainContainer {
+  margin-top:3em;
+}
+
+#menu {
+    background-color:$color2;
+    margin-top:3em; 
+  .liner {
+    ul{
+      @extend .list-unstyled;
+        li {
+           @extend .list-unstyled;
+           border-bottom:2px dashed $white;
+           padding:1em 0em;
+           a {
+              color:$white;
+           }
+        }
+    }
+    a,h2 {
+      @extend .p1;
+      text-transform: uppercase;
+      color:#fff;
+    }
+    h2 {
+      span {
+        color:$orange;
+      }
+    }
+
+  }
+}
+
+#content {
+    margin-top:3em;
+
+}

@@ -1,0 +1,81 @@
+0000.012 () Opened log file at time: Tue, 26 Apr 2016 03:28:47 +0000 on http://pic04646.local
+0000.013 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.4 WP: 4.5 PHP: 5.5.9-1ubuntu4.14 (Linux surge-iMac 3.19.0-51-generic #58~14.04.1-Ubuntu SMP Fri Feb 26 22:02:58 UTC 2016 x86_64) MySQL: 5.5.44 WPLANG:  Server: Apache/2.4.7 (Ubuntu) safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 33.1M | 33.5M) multisite: N openssl: OpenSSL 1.0.1f 6 Jan 2014 mcrypt: Y LANG: C ZipArchive::addFile: Y
+0000.013 () Free space on disk containing Updraft's temporary directory: 166286.5 MB
+0000.015 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":false,"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false}
+0000.073 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.078 () Entity: db
+0000.078 () restore_backup(backup_file=backup_2016-04-26-0221_Piccalilli_a61d43d975a1-db.gz, type=db, info=a:0:{}, last_one=)
+0000.078 () Unpacking backup...
+0000.093 () Database successfully unpacked
+0000.093 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.093 () Using direct MySQL access; value of use_mysqli is: 1
+0000.096 () Max packet size: 32 MB
+0000.096 () Entering maintenance mode
+0000.096 () Enabling Maintenance mode&#8230;
+0000.100 () <strong>Backup of:</strong> http://pic04646.local
+0000.101 () Content URL: http://pic04646.local/wp-content
+0000.101 () Uploads URL: http://pic04646.local/wp-content/uploads
+0000.102 () Old table prefix: kcqe3SOM1SE_
+0000.102 () Site information: multisite=0
+0000.106 () New table prefix: kcqe3SOM1SE_
+0000.109 () Restoring table (InnoDB): kcqe3SOM1SE_options
+0000.173 () Restoring prior UD configuration (table: kcqe3SOM1SE_options; keys: 3)
+0000.181 () Restoring table (InnoDB): kcqe3SOM1SE_users
+0000.188 () Restoring table (InnoDB): kcqe3SOM1SE_usermeta
+0000.197 () Restoring table (InnoDB): kcqe3SOM1SE_commentmeta
+0000.203 () Restoring table (InnoDB): kcqe3SOM1SE_comments
+0000.208 () Restoring table (InnoDB): kcqe3SOM1SE_links
+0000.215 () Restoring table (InnoDB): kcqe3SOM1SE_postmeta
+0000.286 () Restoring table (InnoDB): kcqe3SOM1SE_posts
+0000.314 () Restoring table (InnoDB): kcqe3SOM1SE_term_relationships
+0000.322 () Restoring table (InnoDB): kcqe3SOM1SE_term_taxonomy
+0000.328 () Restoring table (InnoDB): kcqe3SOM1SE_termmeta
+0000.335 () Restoring table (InnoDB): kcqe3SOM1SE_terms
+0000.342 () Restoring table (InnoDB): kcqe3SOM1SE_rg_form
+0000.348 () Restoring table (InnoDB): kcqe3SOM1SE_rg_form_meta
+0000.354 () Restoring table (InnoDB): kcqe3SOM1SE_rg_form_view
+0000.360 () Restoring table (InnoDB): kcqe3SOM1SE_rg_incomplete_submissions
+0000.365 () Database queries processed: 50 in 0.27 seconds
+0000.368 () Restoring table (InnoDB): kcqe3SOM1SE_rg_lead
+0000.373 () Restoring table (InnoDB): kcqe3SOM1SE_rg_lead_detail
+0000.379 () Restoring table (InnoDB): kcqe3SOM1SE_rg_lead_detail_long
+0000.389 () Restoring table (InnoDB): kcqe3SOM1SE_rg_lead_meta
+0000.397 () Restoring table (InnoDB): kcqe3SOM1SE_rg_lead_notes
+0000.401 () Unlocking database and leaving maintenance mode
+0000.401 () Disabling Maintenance mode&#8230;
+0000.401 () Finished: lines processed: 62 in 0.31 seconds
+0000.401 () Cleaning up rubbish...
+0000.409 () Entity: plugins
+0000.409 () restore_backup(backup_file=backup_2016-04-26-0221_Piccalilli_a61d43d975a1-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:41:"/var/www/html/pic04646/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0000.409 () Unpacking backup... (backup_2016-04-26-0221_Piccalilli_a61d43d975a1-plugins.zip, 9.3 Mb)
+0001.541 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.542 () Moving old data: can potentially use wp_filesystem method / -old
+0001.542 () Moving old data out of the way...
+0001.811 () Top-level entities being moved: create-client-role , gravityforms, simple-add-pages-or-posts, bugherd, bulk-page-stub-creator, post-duplicator, regenerate-thumbnails, wordpress-importer, updraftplus, enable-media-replace
+0001.875 () Moving unpacked backup into place...
+0002.107 () Top-level entities being moved: create-client-role , gravityforms, simple-add-pages-or-posts, bugherd, bulk-page-stub-creator, post-duplicator, regenerate-thumbnails, wordpress-importer, updraftplus, enable-media-replace
+0002.117 () Cleaning up rubbish...
+0002.127 () Entity: themes
+0002.127 () restore_backup(backup_file=backup_2016-04-26-0221_Piccalilli_a61d43d975a1-themes.zip, type=themes, info=a:2:{s:4:"path";s:40:"/var/www/html/pic04646/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0002.127 () Unpacking backup... (backup_2016-04-26-0221_Piccalilli_a61d43d975a1-themes.zip, 35.8 Mb)
+0018.258 () Moving old data: filesystem method / updraft_dir is potentially possible
+0018.258 () Moving old data: can potentially use wp_filesystem method / -old
+0018.258 () Moving old data out of the way...
+0048.255 () Top-level entities being moved: surge-starter, index.php
+0048.382 () Moving unpacked backup into place...
+0052.833 () Top-level entities being moved: surge-starter, index.php
+0052.917 () Cleaning up rubbish...
+0052.928 () Entity: uploads
+0052.928 () restore_backup(backup_file=backup_2016-04-26-0221_Piccalilli_a61d43d975a1-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:41:"/var/www/html/pic04646/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0052.929 () Unpacking backup... (backup_2016-04-26-0221_Piccalilli_a61d43d975a1-uploads.zip, 29.6 Mb)
+0054.100 () Moving old data: filesystem method / updraft_dir is potentially possible
+0054.100 () Moving old data: can potentially use wp_filesystem method / -old
+0054.100 () Moving old data out of the way...
+0054.159 () Moving unpacked backup into place...
+0054.211 () Cleaning up rubbish...
+0054.222 () Entity: others
+0054.222 () restore_backup(backup_file=backup_2016-04-26-0221_Piccalilli_a61d43d975a1-others.zip, type=others, info=a:2:{s:4:"path";s:33:"/var/www/html/pic04646/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0054.222 () Unpacking backup... (backup_2016-04-26-0221_Piccalilli_a61d43d975a1-others.zip, 0 Mb)
+0054.247 () Cleaning up rubbish...
+0054.274 () Restore successful!
+0054.274 () Restore successful

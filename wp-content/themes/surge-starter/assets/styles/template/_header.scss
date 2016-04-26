@@ -69,8 +69,10 @@
 								width:100%;
 								background-color:transparent;
 								border-bottom:1px solid transparent;
-							&.open { a { background-color:$orange; color:$white; } }
-								a {
+							&.open { 
+								a { background-color:$color2 !important; color:$white; } 
+							}
+								.dropdown-menu a {
 									font-size:1em;
 									color:$color2;
 									text-transform:uppercase;
@@ -88,6 +90,27 @@
 
 	}
 }
+.collapsing,
+.collapse.in{
+	padding-left:0px;
+	padding-right:0px;
+	.menu-main-menu-container {
+		width:100%;
+	#menu-main-menu {
+		li {
+			width:100%;
+			a {
+				    width: 100%;
+				    display: block;
+				    padding: 1em;
+				    text-align: center;
+				    line-height: 6em;
+			}
+		}
+	}
+	}
+}
+
 #icon-nav {
 	li {
     padding: 0;
@@ -128,5 +151,86 @@
 				    font-size: 1.3em;
 				}
 			}
+	}
+	&.mobile {
+		margin: 0;
+		padding: 0;
+		li {
+			display:inline-block;
+			float:left;
+			a {
+				display:inline-block;
+				span {
+					margin-top: 0.7em;
+				}
+			}
+		}
+	}
 }
+
+.navbar-header.mobile {
+	background-color:$color2;
+	// margin-bottom:3em;
+	.navbar-toggle {
+		    padding: 0;
+		    margin: 0;
+		    border:0px;
+		    height: 5em;
+		    width: 5em;
+		    overflow: hidden;
+
+		span {
+			    background-color: #fff;
+			    width: 75%;
+			    height: 3px;
+			    border-radius: 0;
+			    position: absolute;
+
+		}
+		.icon-bar {
+			transform:rotate(-45deg);
+			top: 50%;
+		    right: 0px;
+		    left: 0px;
+		    transition:0.3s all ease;
+
+		}
+		.icon-bar+.icon-bar {
+			margin-top: 6px;
+			transform:rotate(45deg);
+			top: 40%;
+    		right: auto;
+		}
+		&.collapsed {
+			.icon-bar,
+			.icon-bar+.icon-bar {
+				transform:none;
+					top:auto;
+					left:auto;
+					right:auto;
+					position:initial;
+				transform:none;
+		    	transition:0.3s all ease;
+
+			}
+
+
+		}
+	}
+	.phone {
+	background-color:$color4;
+	width:100%;
+		a {
+			color:#fff;
+			font-size:2.5em;
+			span { padding:0.4em;
+				display:block;} 
+		}
+	}
+}
+.brand {
+	img { 
+		margin-top: 1em;
+		margin-bottom: 1em; 
+	}
 }

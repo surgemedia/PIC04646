@@ -1,0 +1,26 @@
+.btn {
+	background:$color1;
+	font-size:1.4em;
+	color:$color3;
+	border-radius:0px;
+	border:none;
+	margin: 0;
+	padding:1em 3em;
+	font-weight:bold; 
+	text-transform: uppercase;
+	span {
+		color:$color3;
+		display: block;
+	    width: 100%;
+	    clear: both;
+	}
+	&:hover {
+		color:$color2;
+		background-color: $color3;
+		span {
+		color:$color2;
+			
+		}
+	}
+
+}  
