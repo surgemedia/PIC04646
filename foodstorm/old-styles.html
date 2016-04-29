@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <!-- LegacyMode -->
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        body
+        {
+            margin: 0px;
+	        padding: 0px;
+	        font-family: 'Source Sans Pro', Arial, sans-serif;
+	        font-size: 15px;
+	        color: #000000;
+            min-width: 592px; /* 2x Menu width + Cart width */
+        }
+
+        th, td, p, li
+        {
+	        font-family: 'Source Sans Pro', Arial, sans-serif;
+	        font-size: 15px;
+	        color: #000000;
+        }
+
+        h1, h2, h3, h4
+        {
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+            color: #91785B;
+            font-style: italic;
+        }
+
+        input, select, textarea
+        {	
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+	        font-size: 15px;
+	        border-width: 1px;
+	        color: #000000;
+	        padding: 3px;
+        }
+
+        a
+        {
+	        color: #91785B;
+        }
+
+        h1
+        {
+            font-size: 26px;
+        }
+
+        h2
+        {
+            color: #91785B;
+	        display: table;
+	        width: 100%;
+	        margin-bottom: 5px;
+	        border-bottom: 1px solid #C1A991;
+	        margin-bottom: 10px;
+	        font-size: 18px;
+	        font-weight: normal;
+        }
+
+        button
+        {
+	        background-color: #c9ad7d;
+            border-width: 1px;
+	        color: white;
+	        font-size: 15px;
+	        font-weight: normal;
+        }
+
+        #content > .liner 
+        {
+            margin-bottom: 0;
+            padding-top: 0;
+        }
+
+        /* Header Styles
+        ------------------------------------------------ */
+        #header
+        {
+	        background-color: #c9ad7d;
+            position: relative;
+            width: 100%;
+            margin-bottom: 10px;
+            height: 169px;
+        }
+        
+        #header #logo
+        {
+	        position: absolute;
+	        top: 0px;
+	        left: 0px;	
+        }
+        
+        #header li,
+        #header a
+        {
+            color: White;
+        }
+        
+        #customerbar
+        {
+            color: white;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            padding: 5px;
+        }
+
+        #customerbar a
+        {
+            color: white;
+        }
+
+        /* Intro Styles
+        ------------------------------------------------ */
+        #intro
+        {
+            background: #e9decb;
+            padding: 10px;
+        }
+
+        #intro #introleft
+        {
+            display: inline-block;
+            width: 49%;
+        }
+        
+        #intro #introright
+        {
+            display: inline-block;
+            width: 49%;
+        }
+
+        /* Navigation Page Styles
+        ------------------------------------------------ */
+        #navpage 
+        {
+            padding-left: 205px;   /* Menu width */
+            padding-right: 205px;  /* Cart width */
+        }
+
+        * html #menu /*** IE6 Fix ***/
+        {
+            left: 205px;           /* Cart width */
+        }
+
+        *+html #menu  /*** IE7 Fix ***/
+        {
+            left: 205px;           /* Cart width */
+        }
+
+        /* Menu Styles
+        ------------------------------------------------ */
+        #navpage #menu
+        {
+            width: 205px;
+            right: 205px;          /* Menu width */
+	        padding: 0px;
+	        text-align: left;
+        }
+
+        #menu .liner 
+        {
+            margin-bottom: 0;
+            padding: 10px;
+            margin-left: 10px;
+            background-color: #90775A;
+        }
+
+        #menu a
+        {
+	        font-family: 'Source Sans Pro', Arial, sans-serif;
+	        font-weight: normal;
+	        font-size: 15px;
+	        text-decoration: none;
+	        color: white;
+        }
+
+        #menu a:hover
+        {
+	        color: white;
+	        font-size: 15px;
+	        text-decoration: underline;
+        }
+
+        #menu #activemenu
+        {
+	        font-family: Times New Roman;
+	        color: white;
+	        font-size: 15px;
+	        font-weight: bold;
+        }
+
+        #menu #activemenu a
+        {
+	        text-decoration: none;
+	        font-weight: bold;
+        }
+        
+        #menu #activemenu li a
+        {
+	        font-weight: normal;
+        }
+
+        #menu ul
+        {
+            list-style-type: disc;
+            list-style-position: inside;
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        #menu li
+        {
+            border-bottom: 1px dotted white;
+            padding: 6px;
+            color: White;
+        }
+
+        #menu ul li
+        {
+            margin-bottom: 0;
+        }
+
+        #menu ul ul
+        {
+	        list-style-type:none;
+            margin:0;
+            padding:3px 10px;
+        }
+
+        #menu ul ul li
+        {
+	        font-weight: normal;
+	        margin:0 0 3px;
+        }
+
+        #menu #search
+        {
+            margin: 0;
+            padding: 10px 0 0 0;
+        }
+
+        #menu #searchcriteria
+        {
+            padding: 3px;
+            width: 100px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
+        #menu #search button
+        {
+            vertical-align: middle;
+        }
+
+        /* Cart Styles
+        ------------------------------------------------ */
+        #navpage #cart
+        {
+            width: 205px;
+            margin-right: -205px;  /* Cart width */
+        }
+
+        #navpage #cart .liner
+        {
+	        border-style: none;
+	        background-color: transparent;
+	        padding: 10px;
+	        margin: 0 10px 0 0;
+	        background-color: #90775A;
+	        color: white;
+        }
+
+        #navpage #cart h2
+        {
+            color: white;
+        }
+
+        #navpage #cart .liner > h2 
+        {
+            font-size: 18px;
+        }
+
+        #navpage #cart .liner li h2 
+        {
+            background: transparent;
+            width: auto;
+            height: auto;
+            position: relative;
+            top: auto;
+            left: auto;
+            color: white;
+        }
+        
+        #navpage #cart .edit
+        {
+            margin-bottom: 5px;
+        }
+
+        #navpage #cart .cartitem
+        {
+	        background-color: transparent;
+	        padding: 0;
+	        border: none;
+	        border-bottom: 1px solid #D8D8D8;
+        }
+
+        #navpage #cart p,
+        #navpage #cart .cartitem p
+        {
+            color: White;
+        }
+
+        #navpage #cart .cartitem label
+        {
+            margin-right: 3px;
+        }
+
+        #navpage #cart .totals label
+        {
+	        float: none;
+	        width: auto;
+        }
+
+        #navpage #cart .cartitem h2
+        {
+            margin: 0 0 5px;
+        }
+
+        /* Home Styles
+        ------------------------------------------------ */
+        #home .categories li .liner 
+        {
+            padding-bottom: 0;
+        }
+
+        #home .categories img 
+        {
+            margin-right: 10px;
+        }
+
+        #home .categories a 
+        {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        #home .text,
+        #home .text p
+        {
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+        }
+
+        /* Item Styles
+        ------------------------------------------------ */
+        #items ul
+        {
+            margin-right: -20px;
+        }
+        
+        #items .subcategorynav
+        {
+	        background-color: #F6F6F6;
+	        border: none;
+        }
+
+        #items .subcategorynav li
+        {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="/"><img src="https://resources.foodstorm.com/5513431227ad42cab644db3a8eaf470a/logo.png" width="677" height="169" alt="Piccalilli" class="Logo" border="0"></a>
+        <div id="customerbar"></div></div>
+    <div id="content"></div>
+</body>
+</html>
