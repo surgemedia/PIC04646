@@ -5,7 +5,7 @@
 		'template' => 'molecule/transparent-box',
 		'remove_tags' => ['p'],
 		'vars' => [
-					'col-md-5',
+					'col-md-5 col-sm-12',
 					'trans-box text-center',
 					'icon-sushi',
 					'Office <br>Catering',
@@ -22,7 +22,7 @@
 		'template' => 'molecule/transparent-box',
 		'remove_tags' => ['p'],
 		'vars' => [
-					'col-md-5',
+					'col-md-5 col-sm-12',
 					'trans-box text-center',
 					'icon-dish',
 					'Office <br>Catering',

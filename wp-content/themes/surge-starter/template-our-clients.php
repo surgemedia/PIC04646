@@ -14,7 +14,7 @@
 			=============================================*/
 			get_component([ 
 					'template' => 'atom/image-backing',
-					'vars' => ['http://192.168.0.2/pic04646/wp-content/uploads/2016/04/TID03-Image-3.jpg'] ]);
+					'vars' => ['http://piccalilli.surgehost.com.au/wp-content/uploads/2016/04/TID03-Image-3.jpg'] ]);
 
  ?>
 	

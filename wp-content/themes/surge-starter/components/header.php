@@ -3,7 +3,7 @@
 
 <nav class="navbar text-center">
 <?php if(false == is_front_page()): ?>
- <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="http://192.168.0.2/pic04646/wp-content/uploads/2016/04/PICCALILLI-LOGO-206x136.png" alt=""></a>
+ <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="/wp-content/uploads/2016/04/PICCALILLI-LOGO-206x136.png" alt=""></a>
 <?php endif; ?>
 
   <div class="container">
@@ -44,7 +44,7 @@
     </div>
   </div><!-- /.container-fluid -->
 <?php if(true == is_front_page()): ?>
-    <a id="homepage-logo" class="brand img-responsive" href="<?= esc_url(home_url('/')); ?>"><img src="http://192.168.0.2/pic04646/wp-content/uploads/2016/04/PICCALILLI-LOGO-440x290.png" alt="Big Logo"></a>
+    <a id="homepage-logo" class="brand img-responsive" href="<?= esc_url(home_url('/')); ?>"><img src="/wp-content/uploads/2016/04/PICCALILLI-LOGO-440x290.png" alt="Big Logo"></a>
 <?php endif; ?>
 </nav>
 </header>

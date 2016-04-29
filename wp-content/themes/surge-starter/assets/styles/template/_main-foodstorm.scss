@@ -5,13 +5,15 @@
 #menu {
     background-color:$color2;
     margin-top:3em; 
+    @extend .col-md-3;
+
   .liner {
     ul{
       @extend .list-unstyled;
         li {
            @extend .list-unstyled;
-           border-bottom:2px dashed $white;
-           padding:1em 0em;
+           border-bottom:1px dashed $white;
+           padding:1.5em 0em;
            a {
               color:$white;
            }
@@ -25,6 +27,12 @@
     h2 {
       span {
         color:$orange;
+        font-weight: bold;
+        border-bottom:1px dashed $white;
+        padding:1em 0;
+        width: 100%;
+        display:block;
+
       }
     }
 
@@ -33,5 +41,141 @@
 
 #content {
     margin-top:3em;
+    margin-left: 0em;
+    margin-right: 0em;
+    @extend .col-md-9;
+    .categoryimage,
+    .pageheading {
+      display:none;
+    }
+  ul {
+      @extend .list-unstyled;
+      @extend .list-inline;
+      @extend .row;
 
+    li {
+      @extend .list-unstyled;   
+      @extend .col-md-6;
+      @extend .col-sm-12;
+      @extend .col-xs-12;
+      min-height: 215px;
+
+      overflow: hidden;
+      a {
+        display:inline-block;
+        width:100%;
+      img {
+        width: 100%;
+        height:auto !important;
+      }
+      }
+      .item-title,
+      .text {
+            padding:1em 0em;
+        a {
+            @extend .h4;
+            color:$orange;
+            font-weight: bold;
+            display: block;
+            padding:0em 0 0.7em;
+            text-transform: uppercase;
+        }
+      }
+    }
+  }
+  #intro {
+    li,p {
+      @extend .p1;
+      height:auto;
+      min-height: 0px; 
+    }
+  }
+  #items {
+    padding:2em 0em;
+      .item {
+        overflow: hidden;
+         @extend .col-md-12;
+        @extend .col-sm-12;
+        @extend .col-xs-12;
+        @extend .list-unstyled;   
+        .qty {
+            input {
+              height: 61px;
+              width: 61px;
+              display: inline-block;
+              margin: 0px -4px 0px 0px;
+              text-align: center;
+            }
+            button.addtocart.btn {
+                padding: 1em;
+                display: inline-block;
+            }
+        }
+
+
+        h2.item-name { 
+          @extend .item-title;
+          @extend .col-md-6;
+          @extend .pull-right;
+          color:$orange;
+          font-weight: bold;
+          text-transform: uppercase;
+          border:0px;
+          font-size:3em;
+
+           }
+        .fancybox {
+          @extend .col-md-6;
+          @extend .col-sm-12;
+          @extend .col-xs-12;
+          padding-left:0px;
+          padding-right:0px;
+        }
+        .text {
+          @extend .col-md-6;
+          @extend .col-sm-12;
+          @extend .col-xs-12;
+        .priceserve {
+          .price {
+            font-size: 1.5em;
+            text-transform: uppercase;
+          }
+          .serveinfo {
+          text-transform: uppercase;
+          font-size: 1em;
+          }
+        }
+        }
+
+      }
+  }
+  .pager {
+    text-align:left;
+      a,span {
+        margin: 0;
+      }
+  }
 }
+.message {
+  #addedmessage,
+  .info {
+    background-color:$color2;
+    color:#fff; 
+  }
+}
+#cartitems #adddeliverytime {
+      vertical-align: middle;
+    margin-left: 5px;
+    padding: 1em;
+    font-size: 1em;
+    text-transform: inherit;
+}
+/*=======================================
+=            Hidden Elements            =
+=======================================*/
+#menu {
+  .menusearch {
+    display:none;
+  }
+}
+

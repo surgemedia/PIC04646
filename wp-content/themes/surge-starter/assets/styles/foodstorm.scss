@@ -30,26 +30,26 @@
 
 
 @media (max-width: $screen-sm-max) {
-	@import "res/_res-xs-sm.scss";
+	@import "foodstorm-res/_res-xs-sm.scss";
 }
 @media (max-width: $screen-xs-max) {
-	@import "res/_res-xs.scss";
+	@import "foodstorm-res/_res-xs.scss";
 }
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-	@import "res/_res-sm.scss";
+	@import "foodstorm-res/_res-sm.scss";
 }
 @media (min-width: $screen-md-min) {
-	@import "res/_res-md-lg.scss";
+	@import "foodstorm-res/_res-md-lg.scss";
 }
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-	@import "res/_res-md.scss";
+	@import "foodstorm-res/_res-md.scss";
 }
 @media (min-width: $screen-lg-min) {
-	@import "res/_res-lg.scss";
+	@import "foodstorm-res/_res-lg.scss";
 }
 @media (min-width: $screen-lg-min) and (max-width: 1439px) {
-	@import "res/_res-lg-1440.scss";
+	@import "foodstorm-res/_res-lg-1440.scss";
 }
 @media (min-width: 1440px){
-	@import "res/_res-1440.scss";
+	@import "foodstorm-res/_res-1440.scss";
 }

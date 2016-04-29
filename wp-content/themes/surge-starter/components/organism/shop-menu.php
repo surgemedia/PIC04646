@@ -16,9 +16,9 @@
 		'template' => 'molecule/link-img-text',
 		'remove_tags' => ['p'],
 		'vars' => [
-					'col-md-3',
+					'col-md-3 col-sm-6',
 					'shop-item',
-					'http://192.168.0.2/pic04646/wp-content/uploads/2016/04/TID01-CANAPES.jpg',
+					'http://piccalilli.surgehost.com.au/wp-content/uploads/2016/04/TID01-CANAPES.jpg',
 					'lorem salad',
 					NULL, //removed
 					'#'

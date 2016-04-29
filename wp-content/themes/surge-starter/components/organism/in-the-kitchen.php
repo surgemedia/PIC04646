@@ -13,7 +13,7 @@
 		'vars' => [
 					'col' => 'col-md-4',
 					'class' => 'blog-item text-center',
-					'img' => 'http://192.168.0.2/pic04646/wp-content/uploads/2016/04/TID01-CANAPES.jpg',
+					'img' => 'http://piccalilli.surgehost.com.au/wp-content/uploads/2016/04/TID01-CANAPES.jpg',
 					'title' => 'lorem salad',
 					'subtitle' => 'larger text',
 					'href' => get_permalink()

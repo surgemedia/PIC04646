@@ -7,10 +7,9 @@
 
  ?>
 <div class="<?php echo $vars['class'] ?> <?php echo $vars['col'] ?>">
-        <img alt="<?php echo $vars['title']; ?>" class="" src="<?php echo $vars['img']; ?>">
+        <img alt="<?php echo $vars['title']; ?>" class="" src="<?php echo $vars['img']; ?>"></img>
         	<p><?php echo $vars['content']; ?></p>
             <span class="text-center col-xs-12">
                 <?php echo $vars['title'] ?>
             </span>
-        </img>
 </div>

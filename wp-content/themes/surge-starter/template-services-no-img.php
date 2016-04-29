@@ -14,7 +14,7 @@
 			=============================================*/
 			get_component([ 
 					'template' => 'atom/image-backing',
-					'vars' => ['http://pic04646.local/wp-content/uploads/2016/04/TID01-Image-1.jpg'] ]);
+					'vars' => ['http://piccalilli.surgehost.com.au/wp-content/uploads/2016/04/TID01-Image-1.jpg'] ]);
 
  ?>
 	<div id="top-section" class="coal-trans-bg  white-font">
@@ -79,7 +79,7 @@
 			get_component([
 				'template' => 'organism/contact-us',
 				'vars' => [	
-							'background' => 'http://pic04646.local/wp-content/uploads/2016/04/TID02-Image-2.jpg'
+							'background' => 'http://piccalilli.surgehost.com.au/wp-content/uploads/2016/04/TID02-Image-2.jpg'
 
 							]
 						]);

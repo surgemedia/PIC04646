@@ -19,7 +19,7 @@
 		'vars' => [
 					'',
 					'item activetext-center',
-					aq_resize('http://192.168.0.2/pic04646/wp-content/uploads/2016/04/QLD-POLICE-logo.png',130,130,false,true,true),
+					'https://unsplash.it/130/130/?random',
 					NULL,
 					NULL
 					]
@@ -30,7 +30,8 @@
 		'vars' => [
 					'',
 					'item text-center',
-					aq_resize('http://192.168.0.2/pic04646/wp-content/uploads/2016/04/THE-COFFEE-CLUB-logo.jpg',130,130,false,true,true),
+					'https://unsplash.it/130/130/?random',
+
 					NULL,
 					NULL
 					]
@@ -41,7 +42,8 @@
 		'vars' => [
 					'',
 					'item text-center',
-					aq_resize('http://192.168.0.2/pic04646/wp-content/uploads/2016/04/THE-COFFEE-CLUB-logo.jpg',130,130,false,true,true),
+					'https://unsplash.it/130/130/?random',
+
 					NULL,
 					NULL
 					]
@@ -52,7 +54,7 @@
 		'vars' => [
 					'',
 					'item text-center',
-					aq_resize('http://192.168.0.2/pic04646/wp-content/uploads/2016/04/THE-COFFEE-CLUB-logo.jpg',130,130,false,true,true),
+					'https://unsplash.it/130/130/?random',
 					NULL,
 					NULL
 					]
@@ -62,7 +64,8 @@
 		'vars' => [
 					'',
 					'item text-center',
-					aq_resize('http://192.168.0.2/pic04646/wp-content/uploads/2016/04/THE-COFFEE-CLUB-logo.jpg',130,130,false,true,true),
+					'https://unsplash.it/130/130/?random',
+					
 					NULL,
 					NULL
 					]
