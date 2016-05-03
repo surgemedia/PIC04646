@@ -39,7 +39,10 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 $custom_includes = [
   'lib/aq_resizer.php',    // Scripts and stylesheets
   'lib/nav-walker.php',    // Scripts and stylesheets
+  'lib/acf-option-page.php', //ACF Option Page
 
+  'lib/foodstorm_post_type.php',    // Foodstorm links menu
+  
   'lib/function-debug.php',    // Scripts and stylesheets
   'lib/function-display-gravity-form.php',    // Scripts and stylesheets
   'lib/function-get_component.php',    // Scripts and stylesheets

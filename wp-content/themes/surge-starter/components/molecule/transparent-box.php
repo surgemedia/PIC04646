@@ -7,8 +7,7 @@
 	$vars['buttons'] = $vars[5];
 
  ?>
-
-<div class="<?php echo $vars['col'] ?>">
+	<div class="<?php echo $vars['col']; ?>">
 		<div class="<?php echo $vars['class']; ?>">
 		<i class="<?php echo $vars['icon']; ?>"></i>
 		<h1><?php echo $vars['title']; ?></h1>

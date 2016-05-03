@@ -14,7 +14,7 @@
 			=============================================*/
 			get_component([ 
 					'template' => 'atom/image-backing',
-					'vars' => ['http://piccalilli.surgehost.com.au/wp-content/uploads/2016/04/TID01-Image-1.jpg'] ]);
+					'vars' => [getFeaturedUrl(get_the_id())] ]);
 
  ?>
 	<?php 

@@ -44,7 +44,7 @@
     </div>
   </div><!-- /.container-fluid -->
 <?php if(true == is_front_page()): ?>
-    <a id="homepage-logo" class="brand img-responsive" href="<?= esc_url(home_url('/')); ?>"><img src="/wp-content/uploads/2016/04/PICCALILLI-LOGO-440x290.png" alt="Big Logo"></a>
+    <a id="homepage-logo" class="brand img-responsive" href="<?= esc_url(home_url('/')); ?>"><img src="<?php echo get_field('logo','option') ?>" alt="Big Logo"></a>
 <?php endif; ?>
 </nav>
 </header>
