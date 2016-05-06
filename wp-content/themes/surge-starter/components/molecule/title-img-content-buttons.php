@@ -6,8 +6,8 @@
 	$vars['img'] = $vars[4];
     $vars['component'] = $vars[5];
     $vars['component_wrapper'] = $vars[6];
-    $var['inner-cols'] = $vars[7];
-    $var['inner-cols-pull'] = $vars[8];
+    $vars['inner-cols'] = $vars[7];
+    $vars['inner-cols-pull'] = $vars[8];
 
 
 
@@ -15,11 +15,13 @@
 <div class="<?php echo $vars['col'] ?>">
     <h1 class="<?php echo $vars['title_class']; ?>"><?php echo $vars['title']; ?></h1>
 
-    <div class="<?php echo  $var['inner-cols'].' '.$var['inner-cols-pull']; ?>"> 
+    <?php if ($vars['img']!=Null): ?>
+        <div class="text-center <?php echo  $vars['inner-cols'].' '.$vars['inner-cols-pull']; ?>"> 
+         	<img src="<?php echo $vars['img'] ?>" alt="<?php echo $vars['title']; ?>"></img>
+        </div>
+    <?php endif; ?>
 
-     	<img src="<?php echo $vars['img'] ?>" alt="<?php echo $vars['title']; ?>"></img>
-    </div>
-     <div class="<?php echo  $var['inner-cols']; ?>"> 
+     <div class="<?php echo  $vars['inner-cols']; ?>"> 
     <!--  -->
          <p><?php echo $vars['content']; ?></p>
     </div>

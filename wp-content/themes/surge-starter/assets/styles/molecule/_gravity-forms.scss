@@ -1,5 +1,18 @@
 .gform_wrapper{
+	max-width:100%;
 	form{
+		.gform_heading{
+			text-align: center;
+			width: 100%;
+			.gform_title{
+				@extend .h1;
+				@extend .underline;
+				margin-bottom: 1em;
+			}
+			.gform_description{
+				@extend .p1;
+			}
+		}
 		.gform_body {
 			.gform_fields {
 				@extend .list-inline;
@@ -39,7 +52,7 @@
 						.chosen-container {
 								border:4px solid $grey;
 								background:#fff;
-
+								width:100% !important;
 							a.chosen-single {
 								    background: #fff;
 								    border-radius: 0;
@@ -59,7 +72,7 @@
 										b {
 											//arrow
 											@extend .icon-font-core;
-											background-image: none;
+											background-image: none !important;
 											border-left: 4px solid $grey;
 										    font-size: 2.5em;
 										    color: $grey;

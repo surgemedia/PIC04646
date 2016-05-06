@@ -41,16 +41,16 @@ $custom_includes = [
   'lib/nav-walker.php',    // Scripts and stylesheets
   'lib/acf-option-page.php', //ACF Option Page
 
-  'lib/foodstorm_post_type.php',    // Foodstorm links menu
+  'lib/post_type_foodstorm.php',    // Foodstorm links menu
+  'lib/post_type_testimonial.php',    // Testimonials
   
+  'lib/gravity_forms-v5.php',
   'lib/function-debug.php',    // Scripts and stylesheets
   'lib/function-display-gravity-form.php',    // Scripts and stylesheets
   'lib/function-get_component.php',    // Scripts and stylesheets
   'lib/function-get_id_from_slug.php',    // Scripts and stylesheets
   'lib/function-get-featured-image-url.php',    // Scripts and stylesheets
-  'lib/function-truncate-content.php'    // Scripts and stylesheets
-  // 'lib/gravity-forms-v5.php'  
-
+  'lib/function-truncate-content.php',    // Scripts and stylesheets
 
 ];
 

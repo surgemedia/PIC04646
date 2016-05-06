@@ -69,6 +69,11 @@
   img {
     padding: 0.5em;
   }
+  .container div > p + ul{
+    li{
+      @extend .p1;
+    }
+  }
   .button-list {
     text-align: center;
     ul {
@@ -77,11 +82,10 @@
         padding: 0;
         margin: 0;
         a {
-          padding: 0.5em 2.5em;
+          padding: 0.5em 0.5em;
+          min-width: 131px;
         }
-        &:last-child {
-          margin-left: -1px;
-        }
+       
       }
     }
   }

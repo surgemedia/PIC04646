@@ -14,7 +14,7 @@
 			=============================================*/
 			get_component([ 
 					'template' => 'atom/image-backing',
-					'vars' => ['http://piccalilli.surgehost.com.au/wp-content/uploads/2016/04/TID03-Image-3.jpg'] ]);
+					'vars' => [getFeaturedUrl(get_the_id())] ]);
 
  ?>
 	
@@ -37,7 +37,7 @@
 			= @components
 				+ molecule/img-text
 			=============================================*/
-			get_component([ 'template' => 'organism/our-clients' ]);
+			get_component([ 'template' => 'organism/our-clients-multirows' ]);
 	 ?>
 
 <?php endwhile; ?>
