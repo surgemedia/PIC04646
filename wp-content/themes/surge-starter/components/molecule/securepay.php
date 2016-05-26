@@ -1,6 +1,9 @@
+<?php 
+$nonce = wp_create_nonce('secure-frame-payment-nonce');  ?>
+
 <div class="gform_wrapper">
 <div class="container white-font text-center">
-<form id="secureframe_payonline_form" class="" method="post" action="https://payment.securepay.com.au/live/v2/invoice" data-nonce="6fe3be996b">
+<form id="secureframe_payonline_form" method="post" action="https://payment.securepay.com.au/live/v2/invoice" data-nonce="<?php echo $nonce; ?>">
 <div class="gform_body">
 						<p id="amountNote" class="col-md-6 col-sm-12">
 						<br>
@@ -12,19 +15,20 @@
 						<br>
 							3% Surcharge is applied to AMEX Cards
 						</p>
-						<input type="hidden" name="bill_name" value="transact">
-						<input type="hidden" name="merchant_id" id="secureframe_merchant_id" value="DPZ0008">
-						<input type="hidden" name="txn_type" id="secureframe_txn_type" value="0">
-						<input type="hidden" name="amount" id="secureframe_sent_amnt" value="0">
-						<input type="hidden" name="fp_timestamp" id="secureframe_tmstamp" value="">
-						<input type="hidden" name="fingerprint" id="secureframe_fngrprint" value="">
-						<input type="hidden" name="return_url" value="http://www.piccalilli.com.au/pay-online-complete/"> 
-						<input type="hidden" name="return_url_text" value="Go back to Piccalilli main site"> 
-						<input type="hidden" name="return_url_target" value="parent">
+						<input type="hidden" name="bill_name" value="transact" />
+						<input type="hidden" name="merchant_id" id="secureframe_merchant_id" value="DPZ0008" />
+						<input type="hidden" name="txn_type" id="secureframe_txn_type" value="0" />
+						<input type="hidden" name="amount" id="secureframe_sent_amnt" value="0" />
+						<input type="hidden" name="fp_timestamp" id="secureframe_tmstamp" value="" />
+						<input type="hidden" name="fingerprint" id="secureframe_fngrprint" value="" />
+						<input type="hidden" name="return_url" value="http://www.piccalilli.com.au/pay-online-complete/" /> 
+						<input type="hidden" name="return_url_text" value="Go back to Piccalilli main site" /> 
+						<input type="hidden" name="return_url_target" value="parent" />
 						<input type="hidden" name="surcharge" value="yes"> 
 						<input type="hidden" name="surcharge_rate_a" value="3">
 						<input type="hidden" name="card_types" value="VISA|MASTERCARD|AMEX">
 						<input type="hidden" name="page_title" value="Piccalilli Invoice Payment">
+						
 						
 					<ul class="gform_fields top_label form_sublabel_below description_below">
 						<li class="gfield gfield_contains_required field_sublabel_below field_description_below">
@@ -52,21 +56,10 @@
 							</div>
 						</li>
 					</ul>
-						<!-- <div>
-							<label for="secureframe_primary_ref">Invoice Number</label> 
-							<input type="text" name="primary_ref" id="secureframe_primary_ref">
-							<label for="comp_name">Company Name</label> 
-							<input type="text" name="comp_name" id="comp_name">
-							<label for="comp_name">Your Name</label> 
-							<input type="text" name="your_name" id="your_name">
-							<label for="secureframe_amount">Amount to pay</label> 
-							<input type="text" name="secureframe_amount" id="secureframe_amount">
-						</div> -->
-						
-						
+	
 						<div class="gform_footer top_label secure">
 							
-							<input class="submit gform_button button" type="submit" value="Submit" src="">
+							<input class="submit gform_button button" type="image" value="Submit" />
 							
 						</div>					
 </div>
@@ -101,12 +94,12 @@ var processPaymentValues = function () {
 		alert('The amount field only accepts numbers and decimal points.'); 
 		
 	} else {
-		
+		var data;
 		// Display loading ticker here 
 		jQuery('#loading').show(); 
 		
 		jQuery.ajax({
-			url 		: '/wp-admin/process_payment_form.php',  
+			url 		: '/foodstorm/process_payment_form.php',  
 			dataType 	: 'json',
 			method 		: 'GET',  
 			data 		: {
@@ -116,23 +109,34 @@ var processPaymentValues = function () {
 				'txn_type'		: jQuery('#secureframe_txn_type').val(), 
 				'primary_ref'	: jQuery('#secureframe_primary_ref').val() 
 			}, 
-			complete	: function () {
-				
-				// Hide loading ticker here 
-				jQuery('#loading').hide(); 
-					
-			}, 
-			success 	: function (data) {
-				
+			complete	: function (data) {
+				var final_data = jQuery.parseJSON(data.responseText);
 				// Test for nonce errors here - display message if error 
-				
-				jQuery('#secureframe_sent_amnt').val(data.amount); 
-				jQuery('#secureframe_tmstamp').val(data.fp_timestamp); 
-				jQuery('#secureframe_fngrprint').val(data.fingerprint); 
-				
-				// Submit form here....
+				console.log(final_data);
+				jQuery('#secureframe_sent_amnt').val(final_data.amount); 
+				jQuery('#secureframe_tmstamp').val(final_data.fp_timestamp); 
+				jQuery('#secureframe_fngrprint').val(final_data.fingerprint);
+				console.log(final_data);
+				if(final_data.success == "true"){
 				paymentValuesProcessed = true; 
 				jQuery('#secureframe_payonline_form').submit(); 
+				} else {
+					alert('Your form contains errors, please recheck what you have entered');
+				}	
+			}, 
+			success 	: function (data) {
+				console.log(final_data);
+				console.log('sucssess');
+
+				var final_data = jQuery.parseJSON('[' + data.responseText + ']');
+				// Test for nonce errors here - display message if error 
+				
+				jQuery('#secureframe_sent_amnt').val(final_data.amount); 
+				jQuery('#secureframe_tmstamp').val(final_data.fp_timestamp); 
+				jQuery('#secureframe_fngrprint').val(final_data.fingerprint); 
+				
+				// Submit form here....
+				
 				
 			}, 
 			error		: function () {
