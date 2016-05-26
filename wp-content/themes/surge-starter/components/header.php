@@ -38,7 +38,7 @@
         <li class="col-md-6"><a href="<?php echo get_field('pay_your_bill','option') ?>"><i class="icon-cards"></i><span >Pay<br>Your Bill</span></a></li>
         <li class="col-md-6"><a href="<?php echo get_field('shop_online','option') ?>"><i class="icon-trolly"></i><span>Shop<br>Online</span></a></li>
         <li class="col-md-6"><a href="<?php echo get_field('telephone_link','option') ?>"><i class="icon-telephone"></i><span><?php echo get_field('telephone','option') ?></span></a></li>
-        <li class="col-md-6"><a href="<?php echo get_field('download_menu','option') ?>"><i class="icon-fork"></i><span>Download<br>Menu</span></a></li>
+        <li class="col-md-6"><a target="_blank" href="<?php echo get_field('download_menu','option') ?>"><i class="icon-fork"></i><span>Download<br>Menu</span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
     </div>

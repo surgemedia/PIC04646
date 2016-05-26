@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: TID09 - Services Page (No Image)
+ * Template Name:  Payment form
  */
 ?>
 
@@ -26,7 +26,7 @@
 			$swap_title;
 			if(strlen(get_field('title')) <= 0){ $swap_title = get_the_title(); } else { $swap_title = get_field('title'); };
 			get_component([
-				'template' => 'molecule/title-img-content-buttons',
+				'template' => 'molecule/title-img-content-buttons-payment-form',
 				'remove_tags' => ['img'],
 				'vars' => [
 							'container',
@@ -47,39 +47,4 @@
 			unset($swap_title);
  		?>
 	</div>
-	<div class="white-bg">
-	<?php 
-			/*=============================================
-			=            	Page Section       		   
-			= @components
-				+ molecule/page-section-title
-			=============================================*/
-			get_component([
-				'template' => 'molecule/page-section-title',
-				'vars' => [
-							'page-section-title container text-center',
-							get_field("special_heading", "option"),
-							get_field("special_content", "option")
-							]
-						]);
-
-			get_component([
-				'template' => 'molecule/page-section-title',
-				'vars' => [
-							'page-section-title container text-center second',
-							get_field("delivery_heading", "option"),
-							get_field("delivery_content", "option")
-							]
-						]);
-	 ?>
-	 </div> 
-	<?php 
-			get_component([
-				'template' => 'organism/contact-us',
-				'vars' => [	
-							'background' => get_field("default_background", "option")
-
-							]
-						]);
-	?>
 <?php endwhile; ?>

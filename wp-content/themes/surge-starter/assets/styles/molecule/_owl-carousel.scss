@@ -5,8 +5,9 @@
 		img {
 			display:inline;
 			width:auto;
-			height: 130px;
-		  max-width: 100%;
+			max-width: 93%;
+		    height: auto;
+		    max-height: 112px;
 		}
 	} 
 	.owl-nav {
@@ -26,16 +27,21 @@
 			    text-align: center;
 			    content: '\004c';
 			    color: rgba($black,0.3);
-
+			}
+			&:hover {
+				&:before {
+			    color: rgba($black,0.7);
+				}
 			}
 		}
 		div + div { 
 			&:before {
-				
 				left:auto;
 				right:3em;
 				content:'\004d';
-				
+				&:before {
+			    color: rgba($black,0.7);
+				}
 
 			}
 		}

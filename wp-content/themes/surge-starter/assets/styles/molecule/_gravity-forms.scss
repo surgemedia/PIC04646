@@ -125,6 +125,9 @@
 			@extend .col-md-6;
 			@extend .pull-right;
 			margin-top: -80px;
+			&.secure {
+				margin-top: 1em;
+			}
 			text-align: right;
 			input[type=submit],
 			input {

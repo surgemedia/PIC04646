@@ -7,7 +7,8 @@
 			 	// loop through the rows of data
 			    while ( have_rows('links') ) : the_row();
 			        // display a sub field value ?>
-						<li><a href="<?php the_sub_field('href') ?>" class="btn"><span><?php echo get_sub_field('1st_line') ?></span><span><?php echo get_sub_field('2nd_line') ?></span></a></li>
+			       
+						<li><a <?php if(get_sub_field('blank')=='_blank'){ echo 'target="'.get_sub_field('blank').'"';} ?> <?php echo get_sub_field('blank') ?> href="<?php the_sub_field('href') ?>" class="btn"><span><?php echo get_sub_field('1st_line') ?></span><span><?php echo get_sub_field('2nd_line') ?></span></a></li>
 		  <?php endwhile;
 
 			else :

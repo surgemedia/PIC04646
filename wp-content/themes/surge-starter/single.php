@@ -9,14 +9,14 @@
 			=============================================*/
 			get_component([ 
 					'template' => 'atom/image-backing',
-					'vars' => ['http://192.168.0.2/pic04646/wp-content/uploads/2016/04/TID01-Image-1.jpg'] ]);
+					'vars' => [get_field("default_background", "option")] ]);
 
  ?>
  	<article id="blog-content" class="white-bg">
  	<div class="container">
  		<div class="col-md-10 col-md-offset-1">
  		<h1 class="underline dark text-center">In the Kitchen</h1>
- 		<a class="btn" href="#">Back to list</a>
+ 		<a class="btn" href="/in-the-kitchen/">Back to list</a>
  		<header>
  			<span class="cat"><?php echo get_the_category()[0]->name ?></span>
  			<h2><?php the_title(); ?></h2>

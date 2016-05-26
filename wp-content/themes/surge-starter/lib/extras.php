@@ -51,6 +51,7 @@ $custom_includes = [
   'lib/function-get_id_from_slug.php',    // Scripts and stylesheets
   'lib/function-get-featured-image-url.php',    // Scripts and stylesheets
   'lib/function-truncate-content.php',    // Scripts and stylesheets
+  'lib/shortcode-payform.php'    // Scripts and stylesheets
 
 ];
 

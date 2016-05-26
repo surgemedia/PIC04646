@@ -19,13 +19,15 @@
  ?>
 	<div id="top-section" class="coal-trans-bg  white-font">
 		<?php 
+			if(strlen(get_field('title')) <= 0){ $swap_title = get_the_title(); } else { $swap_title = get_field('title'); };
+
 			get_component([
 				'template' => 'molecule/title-img-content-buttons',
 				'vars' => [
 							'container',
 							'underline text-center',
-							get_the_title(),
-							get_the_content(),
+							$swap_title,
+							apply_filters('the_content',get_the_content()),
 							get_field('image'),
 							get_component([
 								'template' => 'atom/button-list',
@@ -37,6 +39,7 @@
 
 							]
 						]);
+			unset($swap_title);
  		?>
 	</div>
 	<div class="white-bg">
@@ -69,7 +72,7 @@
 			get_component([
 				'template' => 'organism/contact-us',
 				'vars' => [	
-							'background' => 'http://piccalilli.surgehost.com.au/wp-content/uploads/2016/04/TID02-Image-2.jpg'
+							'background' => get_field("default_background", "option")
 
 							]
 						]);
