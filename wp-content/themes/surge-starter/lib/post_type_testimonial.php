@@ -53,4 +53,4 @@ function testimonial_post_type() {
 	register_post_type( 'testimonials', $args );
 
 }
-add_action( 'init', 'testimonial_post_type', 0 );
+add_action( 'init', 'testimonial_post_type', 10 );

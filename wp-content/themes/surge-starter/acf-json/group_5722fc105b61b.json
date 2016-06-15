@@ -72,10 +72,10 @@
                     "disabled": 0
                 },
                 {
-                    "key": "field_5722fd71477a2",
-                    "label": "Content",
-                    "name": "content",
-                    "type": "text",
+                    "key": "field_574d1b885f2cd",
+                    "label": "Title Link",
+                    "name": "title_link",
+                    "type": "url",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -85,12 +85,7 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "readonly": 0,
-                    "disabled": 0
+                    "placeholder": ""
                 },
                 {
                     "key": "field_5722fde5477a3",
@@ -219,5 +214,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1464138409
+    "modified": 1464671139
 }

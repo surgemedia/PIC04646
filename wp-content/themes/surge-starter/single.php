@@ -31,7 +31,9 @@
  		</footer>
  		</div>
  		</div>
- 		<p id="simple-contact" class="text-center">Phone 07339 - Fax 0453453453 - Email food@piccialli.com.au</p>
+ 		<p id="simple-contact" class="text-center">
+ 		<?php echo get_field('blog_footer_text','option'); ?>
+ 		</p>
  	</article>
 
 <?php endwhile; ?>

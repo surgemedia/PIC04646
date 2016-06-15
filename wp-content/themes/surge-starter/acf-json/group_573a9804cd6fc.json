@@ -7,7 +7,7 @@
             "label": "short blurb",
             "name": "short_blurb",
             "type": "textarea",
-            "instructions": "This will show even you select this page from the homepage.",
+            "instructions": "This will only show when you select this page from the homepage.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -41,5 +41,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1464138578
+    "modified": 1464141997
 }

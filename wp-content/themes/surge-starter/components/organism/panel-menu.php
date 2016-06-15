@@ -22,7 +22,8 @@
 											get_component([
 												'template' => 'atom/button-list',
 												'return_string' => true
-												])
+												]),
+											get_sub_field('title_link')
 											]
 										]);
 						
