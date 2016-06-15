@@ -2,11 +2,25 @@
 	border:$default-border;
 	background-color: rgba(#000,0.5);
 	padding:3.3em 3.3em 3.3em 3.3em;
+		transition: 0.3s all ease;
+
+	&:hover {
+		border-color:$orange;
+		background-color: rgba(#000,0.7);
+		transition: 0.3s all ease;
+		text-decoration: none;
+	}
 	h1,h2,p,i { color:$white; }
 	h1 {
 		margin: 0px 0px 1em 0px;
 		padding:0px;
 		@extend .underline;
+		a {
+			color:$white;
+			&:hover {
+			text-decoration: none;
+			}
+		}
 	}
 	p {
 		margin: 0px 0px 3em 0px;
@@ -24,30 +38,21 @@
 	ul {
 		li { 
 			margin: 0;
-			 padding: 0; 
-			 display:inline-block;
-			 	margin-right: -0.5px;
-    			margin-left: -1px;
-			 &:first-child {
-			 	margin-right: 0px;
-			 	margin-left: 0px;
-
-			 }
-			 a {
-				padding:0.5em 2em;
+			padding: 0; 
+			display:inline-block;
+			margin-right: 0;
+     	margin-left: 0;
+			
+			a {
+				padding:0.5em 0.5em;
 			 	display:inline-block;
+			 	min-width: 115px;
 			 	span {
 			 		display:block;
 			 		width:100%;
 			 		clear:both;
 			 	}
-			 }
-			&:last-child {
-			 	margin-right: 0px;
-			 	margin-left: 0px;
-			 }
-
+			}
 		}
 	}
-
 } 

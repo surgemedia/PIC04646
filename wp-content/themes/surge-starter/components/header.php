@@ -3,7 +3,7 @@
 
 <nav class="navbar text-center">
 <?php if(false == is_front_page()): ?>
- <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img src="/wp-content/uploads/2016/04/PICCALILLI-LOGO-206x136.png" alt=""></a>
+ <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img height="190" src="<?php echo get_field('logo','option') ?>" alt=""></a>
 <?php endif; ?>
 
   <div class="container">
@@ -17,11 +17,11 @@
         <span class="icon-bar"></span>
       </button>
      <ul id="icon-nav" class="mobile col-xs-8 hidden-sm hidden-md hidden-lg">
-        <li class=""><a href="#"><span >Pay</span></a></li>
-        <li class=""><a href="#"><span>Shop</span></a></li>
-        <li class=""><a href="#"><span>Download Menu</span></a></li>
+        <li class=""><a href="<?php echo get_field('pay_your_bill','option') ?>"><span >Pay</span></a></li>
+        <li class=""><a href="<?php echo get_field('shop_online','option') ?>"><span>Shop</span></a></li>
+        <li class=""><a href="<?php echo get_field('download_menu','option') ?>"><span>Download Menu</span></a></li>
       </ul>
-        <div class="phone hidden-sm hidden-md hidden-lg col-xs-12"><a href="#"><span>07 3391 7114</span></a></div>
+        <div class="phone hidden-sm hidden-md hidden-lg col-xs-12"><a href="<?php echo get_field('telephone_link','option'); ?>"><span><?php echo get_field('telephone','option') ?></span></a></div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -35,16 +35,16 @@
       <!-- </ul> -->
      
       <ul id="icon-nav" class="hidden-xs col-md-4 nav navbar-nav float-left">
-        <li class="col-md-6"><a href="#"><i class="icon-cards"></i><span >Pay<br>Your Bill</span></a></li>
-        <li class="col-md-6"><a href="#"><i class="icon-trolly"></i><span>Shop<br>Online</span></a></li>
-        <li class="col-md-6"><a href="#"><i class="icon-telephone"></i><span>07 3391 7114</span></a></li>
-        <li class="col-md-6"><a href="#"><i class="icon-fork"></i><span>Download<br>Menu</span></a></li>
+        <li class="col-md-6"><a href="<?php echo get_field('pay_your_bill','option') ?>"><i class="icon-cards"></i><span >Pay<br>Your Bill</span></a></li>
+        <li class="col-md-6"><a href="<?php echo get_field('shop_online','option') ?>"><i class="icon-trolly"></i><span>Shop<br>Online</span></a></li>
+        <li class="col-md-6"><a href="<?php echo get_field('telephone_link','option') ?>"><i class="icon-telephone"></i><span><?php echo get_field('telephone','option') ?></span></a></li>
+        <li class="col-md-6"><a target="_blank" href="<?php echo get_field('download_menu','option') ?>"><i class="icon-fork"></i><span>Download<br>Menu</span></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
     </div>
   </div><!-- /.container-fluid -->
 <?php if(true == is_front_page()): ?>
-    <a id="homepage-logo" class="brand img-responsive" href="<?= esc_url(home_url('/')); ?>"><img src="/wp-content/uploads/2016/04/PICCALILLI-LOGO-440x290.png" alt="Big Logo"></a>
+    <a id="homepage-logo" class="brand img-responsive" href="<?= esc_url(home_url('/')); ?>"><img src="<?php echo get_field('logo','option') ?>" alt="Big Logo"></a>
 <?php endif; ?>
 </nav>
 </header>

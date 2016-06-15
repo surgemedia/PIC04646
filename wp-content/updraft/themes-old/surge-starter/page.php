@@ -1,1 +1,0 @@
-<?php include('template-services-no-img.php') ?>

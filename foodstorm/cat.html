@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html class="fs" lang="en">
+    <head>    <title>Welcome - Elizabeth Andrews</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--     <script src="/Public/Content/scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+        <script src="/Public/Content/scripts/jquery.cookie.js" type="text/javascript"></script>
+        <script src="/Public/Content/scripts/page.js" type="text/javascript"></script>
+        <script src="/Public/Content/scripts/jquery.fancybox.pack.js" type="text/javascript"></script> -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="http://pic04646.local/wp-content/themes/surge-starter/dist/styles/foodstorm.css">
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="https://resources.foodstorm.com/8d8622c296764df6828e460e8fc3e82c/megadrop.css" />
+        
+    </head>
+    <body><a name="top"></a><div id="page">
+    <header class="header">
+    <div id="image-backing" style="background-image:url(http://pic04646.local/wp-content/uploads/2016/04/TID01-Image-1.jpg);">
+</div>
+
+        <div class="headTop">
+            <div class="container">
+                <div id="customerbar"></div>
+            </div>
+        </div>
+        <div class="headMiddle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="logo"><a href="http://www.elizabethandrews.com.au">
+                        <img src="http://192.168.0.2/pic04646/wp-content/uploads/2016/04/PICCALILLI-LOGO-206x136.png" alt=""></a></div>
+                    </div>
+                    <div class="col-md-5 head_right">
+                        <h4><span id="cartsummary"></span></h4>
+                        <form method="get" action="/items/search" class="search">
+                            <p>
+                                <input type="search" placeholder="search in products" name="q" />
+                                <button><img src="https://resources.foodstorm.com/8d8622c296764df6828e460e8fc3e82c/search-button.png" alt="" /></button>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header mobile">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <ul id="icon-nav" class="mobile col-xs-8 hidden-sm hidden-md hidden-lg">
+                        <li class=""><a href="#"><span >Pay</span></a></li>
+                        <li class=""><a href="#"><span>Shop</span></a></li>
+                        <li class=""><a href="#"><span>Download Menu</span></a></li>
+                    </ul>
+                    <div class="phone hidden-sm hidden-md hidden-lg col-xs-12"><a href="#"><span>07 3391 7114</span></a></div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse " id="bs-example-navbar-collapse">
+                <div class="menu-main-menu-container">
+                    <ul id="menu-main-menu" class="nav navbar-nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+
+                    </ul>
+                    </div>
+                    <ul id="icon-nav" class="hidden-xs col-md-4 nav navbar-nav float-left">
+                        <li class="col-md-6"><a href="#"><i class="icon-cards"></i><span >Pay<br>Your Bill</span></a></li>
+                        <li class="col-md-6"><a href="#"><i class="icon-trolly"></i><span>Shop<br>Online</span></a></li>
+                        <li class="col-md-6"><a href="#"><i class="icon-telephone"></i><span>07 3391 7114</span></a></li>
+                        <li class="col-md-6"><a href="#"><i class="icon-fork"></i><span>Download<br>Menu</span></a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+                </div><!-- /.container-fluid -->
+            </header>
+            <section id="mainContainer" class="white-bg">
+                <div class="container">
+                    
+                    <div id="navpage">
+                        <div id="navpageliner" class="liner row-fluid">
+                            <div id="menu" class="column col-md-3">
+                                <div class="liner">
+                                    
+                                  
+                                    <div class="menucontent collapsed">
+                                        <h2 class="categoriesheading"><span>All Categories</span></h2>
+                                        <ul>
+                                            <li class="active activemenu homemenuitem" id="activemenu"><a href="/home/index">Home</a>
+                                        </li>
+                                        <li><a href="/items/category/seasonal-specials">Seasonal Specials</a>
+                                        </li><li><a href="/items/category/breakfast">Breakfast</a>
+                                        </li><li><a href="/items/category/cakes-pastries">Cakes &amp; Pastries</a>
+                                        </li><li><a href="/items/category/celebration-cakes">Celebration Cakes</a>
+                                        </li><li><a href="/items/category/sandwiches-rolls">Sandwiches &amp; Rolls</a>
+                                        </li><li><a href="/items/category/lunch-combinations">Lunch Combinations</a>
+                                        </li><li><a href="/items/category/cheese-fruit">Cheese &amp; Fruit</a>
+                                        </li><li><a href="/items/category/cold-lunch-savouries">Cold Lunch Savouries</a>
+                                        </li><li><a href="/items/category/lunch-boxes">Lunch Boxes</a>
+                                        </li><li><a href="/items/category/hot-canapes">Hot Canapes</a>
+                                        </li><li><a href="/items/category/cold-canapes">Cold Canapes</a>
+                                        </li><li><a href="/items/category/grazing-plates">Grazing Plates</a>
+                                        </li><li><a href="/items/category/cocktail-packages">Cocktail Packages</a>
+                                        </li><li><a href="/items/category/hot-buffets-sides">Hot Buffets &amp; Sides</a>
+                                        </li><li><a href="/items/category/salads">Salads</a>
+                                        </li><li><a href="/items/category/desserts">Desserts</a>
+                                        </li><li><a href="/items/category/gluten-free-menu">Gluten Free Menu</a>
+                                        </li><li class="folder"><a href="/items/folder/beverages">Beverages</a>
+                                        </li><li class="folder"><a href="/items/folder/plated-meals">Plated Meals</a>
+                                        </li><li><a href="/items/category/staff">Staff</a>
+                                        </li><li><a href="/items/category/hire-equipment">Hire Equipment</a>
+                                        </li><li><a href="/items/category/barbeques">Barbeques</a>
+                                    </li>       
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        <div id="content" class="column span9">
+            <div class="liner" id="contentliner">
+                <h1 class="pageheading">Seasonal Specials</h1>
+                
+                <div id="items">
+                    <img src="https://unsplash.it/500/500" class="categoryimage" />
+                    <p class="categorydesc">Looking for something different to try? Why not let us tempt you with our delicious monthly specials!</p>
+                    
+                    
+                    <div id="addedmessage" class="info info-hidden">
+                        <div id="addedmessagecontent"></div>
+                        <div class="nav">
+                            <button id="viewcart" class="viewcart btn">View shopping cart</button>
+                            <span class="or">or</span>
+                            <button id="checkout" class="checkout btn" title="Go To Checkout">Go to checkout &gt;</button>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="item">
+                            <div class="liner">
+                                <div class="subliner">
+                                    
+                                    
+                                    <div class="validation-summary-errors validation-summary-valid"></div>
+                                    <h2 class="item-name">Brioche Buns</h2>
+                                    <input type="hidden" name="itemid" value="brioche-buns" />
+                                    <input type="hidden" name="packid" value="" />
+                                    <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+                                        <img src="https://unsplash.it/500/500" width="300" height="150" alt="Brioche Buns" class="hires" />
+                                    </a>
+                                    <div class="text">
+                                        <p class="desc">The perfect size for a corporate lunch, French, delicate, easy to eat and filled with a silky smooth smoked trout mix with fresh watercress. We recommend three Brioche Buns, some fruit and 100% Nudie Juice for a healthy lunch.</p>
+                                        <p class="priceserve ">
+                                            <span class="price">
+                                            $4.90 per bun        </span>
+                                            <span class="serveinfo">
+                                                
+                                            </span>
+                                        </p>
+                                        <p class="qty">
+                                            <label for="brioche-buns_Quantity">Qty</label>
+                                            <input type="number" class="quantity" maxlength="4" id="brioche-buns_Quantity" title="Quantity" />
+                                            <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li><li class="item">
+                        <div class="liner">
+                            <div class="subliner">
+                                
+                                
+                                <div class="validation-summary-errors validation-summary-valid"></div>
+                                <h2 class="item-name">Apricot and Plum Compote</h2>
+                                <input type="hidden" name="itemid" value="apricot-and-plum-compote" />
+                                <input type="hidden" name="packid" value="" />
+                                <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+                                    <img src="https://unsplash.it/500/500" width="300" height="150" alt="Apricot and Plum Compote" class="hires" />
+                                </a>
+                                <div class="text">
+                                    <p class="desc">Celebrate the stone fruit season in style with some sensational house made apricot and plum compote topped with Greek yoghurt and our special Granola. Why not combine these refreshing breakfast treats with some pastries straight out of the oven? They’re sure to impress!</p>
+                                    <p class="priceserve ">
+                                        <span class="price">
+                                        $5.20 per serve        </span>
+                                        <span class="serveinfo">
+                                            
+                                        </span>
+                                    </p>
+                                    <p class="qty">
+                                        <label for="apricot-and-plum-compote_Quantity">Qty</label>
+                                        <input type="number" class="quantity" maxlength="4" id="apricot-and-plum-compote_Quantity" title="Quantity" />
+                                        <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li><li class="item">
+                    <div class="liner">
+                        <div class="subliner">
+                            
+                            
+                            <div class="validation-summary-errors validation-summary-valid"></div>
+                            <h2 class="item-name">Mini Donutellas (2 per serve)</h2>
+                            <input type="hidden" name="itemid" value="mini-donutellas-2-per-serve" />
+                            <input type="hidden" name="packid" value="" />
+                            <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+                                <img src="https://unsplash.it/500/500" width="300" height="150" alt="Mini Donutellas (2 per serve)" class="hires" />
+                            </a>
+                            <div class="text">
+                                <p class="desc">Chances are you’ve seen them on Facebook, Melbourne’s number 1 trending food item – a freshly baked donut filled with Nutella!</p>
+                                <p class="priceserve ">
+                                    <span class="price">
+                                    $3.90 per serve        </span>
+                                    <span class="serveinfo">
+                                        
+                                    </span>
+                                </p>
+                                <p class="qty">
+                                    <label for="mini-donutellas-2-per-serve_Quantity">Qty</label>
+                                    <input type="number" class="quantity" maxlength="4" id="mini-donutellas-2-per-serve_Quantity" title="Quantity" />
+                                    <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li><li class="item">
+                <div class="liner">
+                    <div class="subliner">
+                        
+                        
+                        <div class="validation-summary-errors validation-summary-valid"></div>
+                        <h2 class="item-name">Fillet of Beef Sliders</h2>
+                        <input type="hidden" name="itemid" value="fillet-of-beef-sliders" />
+                        <input type="hidden" name="packid" value="" />
+                        <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+                            <img src="https://unsplash.it/500/500" width="300" height="150" alt="Fillet of Beef Sliders" class="hires" />
+                        </a>
+                        <div class="text">
+                            <p class="desc">Prime eye fillet of beef with a tangy sauce and shredded beetroot salsa in a sesame crusted slider. Oh, and did we mention the pickle top hat – just for fun?</p>
+                            <p class="priceserve ">
+                                <span class="price">
+                                $5.90 per serve        </span>
+                                <span class="serveinfo">
+                                    (minimum 8 serves)
+                                </span>
+                            </p>
+                            <p class="qty">
+                                <label for="fillet-of-beef-sliders_Quantity">Qty</label>
+                                <input type="number" class="quantity" maxlength="4" id="fillet-of-beef-sliders_Quantity" title="Quantity" />
+                                <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li><li class="item">
+            <div class="liner">
+                <div class="subliner">
+                    
+                    
+                    <div class="validation-summary-errors validation-summary-valid"></div>
+                    <h2 class="item-name">Pork Slider</h2>
+                    <input type="hidden" name="itemid" value="pork-slider" />
+                    <input type="hidden" name="packid" value="" />
+                    <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+                        <img src="https://unsplash.it/500/500" width="300" height="150" alt="Pork Slider" class="hires" />
+                    </a>
+                    <div class="text">
+                        <p class="desc">Asian style pork slider in a fresh sesame seed crusted bun with market greens.</p>
+                        <p class="priceserve ">
+                            <span class="price">
+                            $5.90 per serve        </span>
+                            <span class="serveinfo">
+                                (minimum 8 serves)
+                            </span>
+                        </p>
+                        <p class="qty">
+                            <label for="pork-slider_Quantity">Qty</label>
+                            <input type="number" class="quantity" maxlength="4" id="pork-slider_Quantity" title="Quantity" />
+                            <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="item">
+        <div class="liner">
+            <div class="subliner">
+                
+                
+                <div class="validation-summary-errors validation-summary-valid"></div>
+                <h2 class="item-name">Chicken Schnitzel Roll</h2>
+                <input type="hidden" name="itemid" value="chicken-schnitzel-roll" />
+                <input type="hidden" name="packid" value="" />
+                <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+                    <img src="https://unsplash.it/500/500" width="300" height="150" alt="Chicken Schnitzel Roll" class="hires" />
+                </a>
+                <div class="text">
+                    <p class="desc">Delicious chicken schnitzel in a soft Turkish roll with cheese, home made mayonnaise and iceberg lettuce.
+                    Recommended 1.5 per person.</p>
+                    <p class="priceserve ">
+                        <span class="price">
+                        $7.50 per roll        </span>
+                        <span class="serveinfo">
+                            
+                        </span>
+                    </p>
+                    <p class="qty">
+                        <label for="chicken-schnitzel-roll_Quantity">Qty</label>
+                        <input type="number" class="quantity" maxlength="4" id="chicken-schnitzel-roll_Quantity" title="Quantity" />
+                        <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </li><li class="item">
+    <div class="liner">
+        <div class="subliner">
+            
+            
+            <div class="validation-summary-errors validation-summary-valid"></div>
+            <h2 class="item-name">Hot Jacket Potato with Sides (G)</h2>
+            <input type="hidden" name="itemid" value="hot-jacket-potato-with-sides-g" />
+            <input type="hidden" name="packid" value="hot-jacket-potato-with-sides-g" />
+            <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+                <img src="https://unsplash.it/500/500" width="300" height="150" alt="Hot Jacket Potato with Sides (G)" class="hires" />
+            </a>
+            <div class="text">
+                <p class="desc">A hot jacket potato served with sour cream, cheese, bacon, guacamole and coleslaw on the side (plastic plates and service spoons included).</p>
+                <p class="priceserve ">
+                    <span class="price">
+                    $8.30 per serve        </span>
+                    <span class="serveinfo">
+                        (minimum 6 serves)
+                    </span>
+                </p>
+                <p class="qty">
+                    <label for="hot-jacket-potato-with-sides-g_Quantity">Qty</label>
+                    <input type="number" class="quantity" maxlength="4" id="hot-jacket-potato-with-sides-g_Quantity" title="Quantity" />
+                    <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+                </p>
+            </div>
+        </div>
+    </div>
+</li><li class="item">
+<div class="liner">
+    <div class="subliner">
+        
+        
+        <div class="validation-summary-errors validation-summary-valid"></div>
+        <h2 class="item-name">Branded Muffins</h2>
+        <input type="hidden" name="itemid" value="branded-muffins" />
+        <input type="hidden" name="packid" value="" />
+        <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+            <img src="https://unsplash.it/500/500" width="300" height="150" alt="Branded Muffins" class="hires" />
+        </a>
+        <div class="text">
+            <p class="desc">Create your own custom muffins with a bespoke logo or message or even something weird and wonderful like some of our Halloween specials!</p>
+            <p class="priceserve ">
+                <span class="price">
+                $4.30 per muffin        </span>
+                <span class="serveinfo">
+                    
+                </span>
+            </p>
+            <p class="qty">
+                <label for="branded-muffins_Quantity">Qty</label>
+                <input type="number" class="quantity" maxlength="4" id="branded-muffins_Quantity" title="Quantity" />
+                <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+            </p>
+        </div>
+    </div>
+</div>
+</li><li class="item">
+<div class="liner">
+<div class="subliner">
+    
+    
+    <div class="validation-summary-errors validation-summary-valid"></div>
+    <h2 class="item-name">Branded Cakes</h2>
+    <input type="hidden" name="itemid" value="branded-cakes" />
+    <input type="hidden" name="packid" value="" />
+    <a class="fancybox embedignore" rel="group" href="https://unsplash.it/500/500">
+        <img src="https://unsplash.it/500/500" width="300" height="150" alt="Branded Cakes" class="hires" />
+    </a>
+    <div class="text">
+        <p class="desc">Create your own custom cake with a bespoke logo or message. Chocolate Mud, Cuatro Leche, Carrot, Apple Maple or gluten free Chocolate Hazelnut available (48 hours notice is appreciated - serves up to 16).</p>
+        <p class="priceserve ">
+            <span class="price">
+            $78.50 per cake        </span>
+            <span class="serveinfo">
+                
+            </span>
+        </p>
+        <p class="qty">
+            <label for="branded-cakes_Quantity">Qty</label>
+            <input type="number" class="quantity" maxlength="4" id="branded-cakes_Quantity" title="Quantity" />
+            <button class="addtocart btn"><span class="label">Add to cart</span><span class="altlabel"></span></button>
+        </p>
+    </div>
+</div>
+</div>
+</li>    </ul>
+<p class="taxmessage">All prices include GST.</p>
+</div>
+<link rel="stylesheet" type="text/css" href="/Public/Content/assets/jquery-ui.min.css" />
+<script src="/Public/Content/scripts/jquery.numeric.js" type="text/javascript"></script>
+<script src="/Public/Content/scripts/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/Public/Content/scripts/jquery.toDictionary.js" type="text/javascript"></script>
+<script src="/Public/Content/scripts/cart.js?v=3" type="text/javascript"></script>
+<script src="/Public/Content/scripts/items.js?v=9" type="text/javascript"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer id="footer">
+<div class=" social">
+<div class="container">
+<div class="wrap">
+<!--
+<h5>Follow us :</h5>
+<ul>
+<li><a href="#">
+<img src="https://resources.foodstorm.com/8d8622c296764df6828e460e8fc3e82c/facebook.jpg" /></a></li>
+<li><a href="#">
+<img src="https://resources.foodstorm.com/8d8622c296764df6828e460e8fc3e82c/twt.jpg" /></a></li>
+<li><a href="#">
+<img src="https://resources.foodstorm.com/8d8622c296764df6828e460e8fc3e82c/g+.jpg" /></a></li>
+</ul>
+-->
+</div>
+</div>
+</div>
+<div class="container">
+<div class="foot">
+<div class="col-md-7">
+<ul>
+<h4>USEFUL LINKS</h4>
+<li><a href="http://elizabethandrews.com.au/index.php/aboutcateringmelbourne">About Us</a></li>
+<li><a href="http://elizabethandrews.com.au/index.php/faq">Delivery Information</a></li>
+<li><a href="http://elizabethandrews.com.au/index.php/howtoordercatering">Ordering Tips</a></li>
+</ul>
+<ul>
+<h4>&nbsp;</h4>
+<li><a href="http://elizabethandrews.com.au/index.php/download-menu">Download Menu</a></li>
+<li><a href="http://elizabethandrews.com.au/index.php/contact">Customer Support</a></li>
+<li><a href="http://elizabethandrews.com.au/index.php/terms-and-condition">Terms & Conditions</a></li>
+</ul>
+<ul>
+<h4>CONTACT INFO</h4>
+<li>Call Us: 03 9670 4361</li>
+<li>catering@elizabethandrews.com.au</li>
+<li>309 King Street, Melbourne 3000</li>
+</ul>
+</div>
+<div class="col-md-4">
+<div class="store">
+<h4>Newsletter</h4>
+<ul>
+<li>
+<input type="text" placeholder="Enter Your Name" /></li>
+<li>
+<input type="text" placeholder="Enter Your E-mail" /></li>
+<li>
+<input type="button" value="Join Us Now" /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="foot_bottom">
+<div class="container">
+<div class="wrap1">
+
+<div id="footer">
+<div class="liner">
+<div id="footerpages">
+    <div class="liner">
+        <ul>
+            <li><a href="/home/index">Home</a>
+            </li><li><a href="/content/page/about">About Us</a>
+            </li><li><a href="/content/page/contact">Contact Us</a>
+            </li><li><a href="/content/page/faq">FAQ</a>
+        </li>                </ul>
+    </div>
+</div>
+<p>&copy; Copyright 2016 Elizabeth Andrews.
+    <a href="/content/page/terms" class="terms">Terms &amp; Conditions.</a>
+    <a href="/content/page/refunds" class="refunds">Refund Policy.</a>
+    <a href="/content/page/privacy">Privacy Policy</a>.</p>
+    <p><a href="http://www.foodstorm.com" target="_blank">Powered by FoodStorm</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div></body>
+</html>

@@ -13,64 +13,34 @@
  ?>
 <div class="clients owl-carousel">
    <?php 
-	get_component([
-		'template' => 'molecule/img-text',
-		'remove_tags' => ['p','span'],
-		'vars' => [
-					'',
-					'item activetext-center',
-					'https://unsplash.it/130/130/?random',
-					NULL,
-					NULL
-					]
-				]);
-	get_component([
-		'template' => 'molecule/img-text',
-		'remove_tags' => ['p','span'],
-		'vars' => [
-					'',
-					'item text-center',
-					'https://unsplash.it/130/130/?random',
 
-					NULL,
-					NULL
-					]
-				]);
-		get_component([
-		'template' => 'molecule/img-text',
-		'remove_tags' => ['p','span'],
-		'vars' => [
-					'',
-					'item text-center',
-					'https://unsplash.it/130/130/?random',
+		$images = get_field('gallery','option');
 
-					NULL,
-					NULL
-					]
-				]);
- 	get_component([
-		'template' => 'molecule/img-text',
-		'remove_tags' => ['p','span'],
-		'vars' => [
-					'',
-					'item text-center',
-					'https://unsplash.it/130/130/?random',
-					NULL,
-					NULL
-					]
-				]);	get_component([
-		'template' => 'molecule/img-text',
-		'remove_tags' => ['p','span'],
-		'vars' => [
-					'',
-					'item text-center',
-					'https://unsplash.it/130/130/?random',
-					
-					NULL,
-					NULL
-					]
-				]);
-   ?>
+		if( $images ): ?>
+		    
+		        <?php foreach( $images as $image ): ?>
+		           <?php 
+		           	
+		            get_component([
+									'template' => 'molecule/img-text',
+									'remove_tags' => ['p','span'],
+									'vars' => [
+												'',
+												'item activetext-center',
+												$image['url'],
+												NULL,
+												NULL
+												]
+											]);
+
+		            ?>
+
+		        <?php endforeach; ?>
+		    
+		<?php endif; ?>
+
+
+   
   </div>
   
   </div>

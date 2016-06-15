@@ -21,10 +21,12 @@
 	}
 	h2 {
 		 margin: 0;
-	    line-height: 1em;
+	    line-height: 1.3em;
 	    font-size: 3em;
 	    text-transform: uppercase;
-	    margin-bottom: 2em;
+	    margin-bottom: 1em;
+	    height: 78px;
+	    overflow: hidden;
 	}
 	span {
 		@extend .menu-a;
